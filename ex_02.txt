@@ -1,0 +1,9 @@
+let IsHeMajor = true
+let writtenNumber = 'forty two'
+let Number = 42
+let variableNumber = 42.42
+
+console.log(IsHeMajor);
+console.log(writtenNumber);
+console.log(Number)
+console.log(variableNumber);

@@ -1,0 +1,28 @@
+// Calcule sandwichs au jambon :
+let hamSandwiches = Math.min(Math.floor(breadCount / 2), hamCount);
+breadCount -= hamSandwiches * 2;
+hamCount -= hamSandwiches;
+
+displayThisText(`Ham sandwich(es): ${hamSandwiches}`);
+
+// Calcule sandwichs au thon :
+let tunaSandwiches = Math.min(Math.floor(breadCount / 2), tunaCount, Math.floor(saladCount / 2));
+breadCount -= tunaSandwiches * 2;
+tunaCount -= tunaSandwiches;
+saladCount -= tunaSandwiches * 2;
+
+displayThisText(`Tuna sandwich(es): ${tunaSandwiches}`);
+
+// Calcule sandwichs vegie :
+let vegetarianSandwiches = Math.min(Math.floor(breadCount / 2), saladCount, Math.floor(tomatoCount / 2));
+breadCount -= vegetarianSandwiches * 2;
+saladCount -= vegetarianSandwiches;
+tomatoCount -= vegetarianSandwiches * 2;
+
+displayThisText(`Vegetarian sandwich(es): ${vegetarianSandwiches}`);
+
+// ngrédients restants :
+displayIngredients();
+
+
+calculateSandwiches()

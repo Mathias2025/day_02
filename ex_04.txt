@@ -1,0 +1,21 @@
+let WhatIsThis;
+let IsHeMajor = true;
+let writtenNumber = 'forty two';
+let Number = 42;
+let variableNumber = 42.42;
+let bigInt = 314n;
+let uniqueId = Symbol("id");
+function greet() {
+  return "Hello!";
+}
+
+displayThisText(typeof WhatIsThis);
+displayThisText(typeof IsHeMajor);
+displayThisText(typeof writtenNumber);
+displayThisText(typeof Number);
+displayThisText(typeof variableNumber);
+displayThisText(typeof bigInt);
+displayThisText(typeof uniqueId);
+displayThisText(typeof greet);
+
+console.log('C\'est good')
